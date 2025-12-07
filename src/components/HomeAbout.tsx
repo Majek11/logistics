@@ -53,7 +53,7 @@ export default function HomeAbout() {
                             We provide the best <span className="text-[#FF5757]">logistics solutions</span> for your business
                         </h2>
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                            Containa is a global leader in supply chain management and logistics. We combine industry expertise with cutting-edge technology to deliver seamless, efficient, and sustainable solutions for businesses of all sizes.
+                            Kenny Logistics Services is a global leader in supply chain management and logistics. We combine industry expertise with cutting-edge technology to deliver seamless, efficient, and sustainable solutions for businesses of all sizes.
                         </p>
 
                         <div className="space-y-4 mb-10">

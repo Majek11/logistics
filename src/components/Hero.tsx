@@ -8,7 +8,7 @@ import Image from "next/image";
 const slides = [
   {
     image: "/images/hero-bg.png",
-    title: "Global Supply \nChain Management",
+    title: "Kenny Logistics \nServices",
     subtitle: "Global Logistics Partner"
   },
   {

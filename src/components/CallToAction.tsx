@@ -13,7 +13,7 @@ export default function CallToAction() {
                     Ready to streamline your supply chain?
                 </h2>
                 <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto">
-                    Join thousands of businesses that trust Containa for their logistics needs. Get a quote today or contact our team.
+                    Join thousands of businesses that trust Kenny Logistics Services for their logistics needs. Get a quote today or contact our team.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link

@@ -29,8 +29,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-[#0B1221] mb-2">Email Us</h3>
-                                        <p className="text-gray-600">info@containa.com</p>
-                                        <p className="text-gray-600">support@containa.com</p>
+                                        <p className="text-gray-600">info@kennylogistics.com</p>
+                                        <p className="text-gray-600">support@kennylogistics.com</p>
                                     </div>
                                 </div>
 

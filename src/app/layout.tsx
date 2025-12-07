@@ -5,8 +5,11 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Containa - Global Supply Chain Management",
-  description: "End-to-end logistics and supply chain management services.",
+  title: "Kenny Logistics Services - Global Supply Chain Management",
+  description: "End-to-end logistics and supply chain management services provided by Kenny Logistics Services.",
+  icons: {
+    icon: "/images/icon.png",
+  },
 };
 
 export default function RootLayout({

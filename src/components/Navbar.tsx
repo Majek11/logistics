@@ -36,8 +36,8 @@ export default function Navbar() {
             )}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
-                <Link href="/" className="text-2xl font-bold text-white tracking-tight">
-                    Containa<sup className="text-xs font-normal">®</sup>
+                <Link href="/" className="flex items-center gap-2">
+                    <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-16 w-auto brightness-0 invert" />
                 </Link>
 
                 {/* Desktop Menu */}

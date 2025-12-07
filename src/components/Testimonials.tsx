@@ -49,7 +49,7 @@ export default function Testimonials() {
                     >
                         <div className="relative z-10">
                             <p className="text-2xl font-medium text-[#0B1221] leading-relaxed mb-8">
-                                "Containa Has Been An Exceptional Logistics Partner For Me. Their User-Friendly Platform Has Made Managing Shipments A Breeze."
+                                "Kenny Logistics Services Has Been An Exceptional Logistics Partner For Me. Their User-Friendly Platform Has Made Managing Shipments A Breeze."
                             </p>
                         </div>
 

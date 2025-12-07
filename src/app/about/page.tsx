@@ -11,7 +11,7 @@ export default function AboutPage() {
         <main className="min-h-screen bg-white">
             <Navbar />
             <PageHeader
-                title="About Containa"
+                title="About Kenny Logistics Services"
                 description="We are redefining global logistics with technology and expertise. Learn more about our mission and values."
             />
             <HomeAbout />

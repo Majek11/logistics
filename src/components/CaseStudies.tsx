@@ -15,7 +15,7 @@ const caseStudies = [
     {
         image: "/images/case-2.png",
         tags: ["Warehousing", "Supply Chain", "America"],
-        title: "Abacus teams up with Containa to drive efficiency",
+        title: "Abacus teams up with Kenny Logistics Services to drive efficiency",
         date: "13 June 2024",
         location: "United States",
     },
