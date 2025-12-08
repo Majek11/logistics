@@ -62,10 +62,11 @@ export default function Footer() {
                         <h4 className="text-lg font-bold mb-6">Contact</h4>
                         <ul className="space-y-4 text-gray-400">
                             <li>info@kennylogistics.com</li>
-                            <li>+1 (555) 123-4567</li>
+                            <li>07502142839</li>
                             <li>
-                                123 Logistics Way<br />
-                                Port City, PC 12345
+                                6 Jaxons Court, Haligate<br />
+                                Wigan (By Stand U, Wigan Bus Station)<br />
+                                WN1 1LR
                             </li>
                         </ul>
                     </div>
