@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div>
                         <Link href="/" className="flex items-center gap-2 mb-6">
-                            <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-12 w-auto brightness-0 invert" />
+                            <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-12 w-auto" style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(4498%) hue-rotate(347deg) brightness(106%) contrast(107%)' }} />
                         </Link>
                         <p className="text-gray-400 leading-relaxed mb-8">
                             Kenny Logistics Services - Leading the way in global supply chain management and logistics solutions. We connect your business to the world.
