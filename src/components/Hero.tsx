@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Calendar, ArrowRight } from "lucide-react";
+import { MapPin, Calendar, ArrowRight, Check, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 const slides = [
@@ -25,6 +25,15 @@ const slides = [
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedLocation, setSelectedLocation] = useState("Bali, Indonesia");
+
+  const locations = [
+    "Bali, Indonesia",
+    "Singapore",
+    "Rotterdam",
+    "Los Angeles"
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -89,15 +98,47 @@ export default function Hero() {
             <form className="space-y-4">
               <div className="relative group">
                 <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#FF5757] transition-colors" size={20} />
-                <select className="w-full h-12 pl-12 pr-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#FF5757] focus:bg-white/10 transition-all appearance-none cursor-pointer">
-                  <option className="bg-[#0B1221]">Bali, Indonesia</option>
-                  <option className="bg-[#0B1221]">Singapore</option>
-                  <option className="bg-[#0B1221]">Rotterdam</option>
-                </select>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
-                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    className="w-full h-12 pl-12 pr-4 bg-white/5 border border-white/10 rounded-xl text-white text-left flex items-center justify-between focus:outline-none focus:border-[#FF5757] focus:bg-white/10 transition-all"
+                  >
+                    <span className="truncate">{selectedLocation}</span>
+                    <ChevronDown size={16} className={`text-gray-400 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  <AnimatePresence>
+                    {isDropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute top-full left-0 right-0 mt-2 bg-[#1F2937] rounded-xl shadow-xl border border-white/10 overflow-hidden z-50 py-2"
+                      >
+                        {locations.map((location) => (
+                          <button
+                            key={location}
+                            type="button"
+                            onClick={() => {
+                              setSelectedLocation(location);
+                              setIsDropdownOpen(false);
+                            }}
+                            className="w-full px-4 py-3 text-left text-white hover:bg-white/10 transition-colors flex items-center gap-3"
+                          >
+                            <div className="w-5 flex items-center justify-center">
+                              {selectedLocation === location && (
+                                <Check size={16} className="text-white" />
+                              )}
+                            </div>
+                            {location}
+                          </button>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </div>
 

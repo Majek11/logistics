@@ -40,8 +40,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-[#0B1221] mb-2">Call Us</h3>
-                                        <p className="text-gray-600">+1 (555) 123-4567</p>
-                                        <p className="text-gray-600">+1 (555) 987-6543</p>
+                                        <p className="text-gray-600">07502142839</p>
                                     </div>
                                 </div>
 
@@ -52,9 +51,9 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-xl font-bold text-[#0B1221] mb-2">Visit Us</h3>
                                         <p className="text-gray-600">
-                                            123 Logistics Way<br />
-                                            Port City, PC 12345<br />
-                                            United States
+                                            6 Jaxons Court, Haligate<br />
+                                            Wigan (By Stand U, Wigan Bus Station)<br />
+                                            WN1 1LR
                                         </p>
                                     </div>
                                 </div>

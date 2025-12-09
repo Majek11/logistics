@@ -37,7 +37,7 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2">
-                    <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-10 w-auto brightness-0 invert" />
+                    <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-10 w-auto" style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(4498%) hue-rotate(347deg) brightness(106%) contrast(107%)' }} />
                 </Link>
 
                 {/* Desktop Menu */}
