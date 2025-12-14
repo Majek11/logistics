@@ -24,7 +24,7 @@ export default function ContactPage() {
 
                             <div className="space-y-8">
                                 <div className="flex items-start gap-6">
-                                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#FF5757] shrink-0">
+                                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E55D2C] shrink-0">
                                         <Mail size={24} />
                                     </div>
                                     <div>
@@ -35,7 +35,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <div className="flex items-start gap-6">
-                                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#FF5757] shrink-0">
+                                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E55D2C] shrink-0">
                                         <Phone size={24} />
                                     </div>
                                     <div>
@@ -45,14 +45,14 @@ export default function ContactPage() {
                                 </div>
 
                                 <div className="flex items-start gap-6">
-                                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#FF5757] shrink-0">
+                                    <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-[#E55D2C] shrink-0">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-[#0B1221] mb-2">Visit Us</h3>
                                         <p className="text-gray-600">
-                                            6 Jaxons Court, Haligate<br />
-                                            Wigan (By Stand U, Wigan Bus Station)<br />
+                                            6 Jaxons Court, Hallgate, Wigan<br />
+                                            ( By Stand U, Wigan Bus Station )<br />
                                             WN1 1LR
                                         </p>
                                     </div>
@@ -66,25 +66,25 @@ export default function ContactPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors" />
+                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors" />
+                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
                                     </div>
                                 </div>
 
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                                    <input type="email" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors" />
+                                    <input type="email" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
                                 </div>
 
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                                    <textarea rows={4} className="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors resize-none"></textarea>
+                                    <textarea rows={4} className="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors resize-none"></textarea>
                                 </div>
 
-                                <button type="submit" className="w-full h-14 bg-[#FF5757] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                                <button type="submit" className="w-full h-14 bg-[#E55D2C] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
                                     Send Message
                                     <Send size={20} />
                                 </button>

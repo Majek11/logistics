@@ -37,7 +37,7 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-2">
-                    <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-10 w-auto" style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(4498%) hue-rotate(347deg) brightness(106%) contrast(107%)' }} />
+                    <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-10 w-auto" />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -49,7 +49,7 @@ export default function Navbar() {
                             className="text-gray-300 hover:text-white text-sm font-medium transition-colors relative group"
                         >
                             {link.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FF5757] transition-all group-hover:w-full" />
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#E55D2C] transition-all group-hover:w-full" />
                         </Link>
                     ))}
                     <Link
@@ -91,7 +91,7 @@ export default function Navbar() {
                             ))}
                             <Link
                                 href="/contact"
-                                className="mt-4 w-full py-3 bg-[#FF5757] text-white text-center rounded-lg font-medium"
+                                className="mt-4 w-full py-3 bg-[#E55D2C] text-white text-center rounded-lg font-medium"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Contact Us

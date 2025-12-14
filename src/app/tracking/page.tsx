@@ -21,7 +21,7 @@ export default function TrackingPage() {
                                     <label className="text-sm font-semibold text-gray-700 mb-3 block">Origin</label>
                                     <div className="relative">
                                         <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
-                                        <select className="w-full h-14 pl-12 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 focus:outline-none focus:border-[#FF5757] focus:ring-2 focus:ring-red-100 transition-all appearance-none cursor-pointer font-medium">
+                                        <select className="w-full h-14 pl-12 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 focus:outline-none focus:border-[#E55D2C] focus:ring-2 focus:ring-red-100 transition-all appearance-none cursor-pointer font-medium">
                                             <option>Bali, Indonesia</option>
                                             <option>Singapore</option>
                                             <option>Rotterdam</option>
@@ -35,7 +35,7 @@ export default function TrackingPage() {
                                         <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                                         <input
                                             type="date"
-                                            className="w-full h-14 pl-12 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 focus:outline-none focus:border-[#FF5757] focus:ring-2 focus:ring-red-100 transition-all font-medium"
+                                            className="w-full h-14 pl-12 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 focus:outline-none focus:border-[#E55D2C] focus:ring-2 focus:ring-red-100 transition-all font-medium"
                                         />
                                     </div>
                                 </div>
@@ -46,13 +46,13 @@ export default function TrackingPage() {
                                 <input
                                     type="text"
                                     placeholder="e.g. TRK-123456789"
-                                    className="w-full h-14 pl-6 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#FF5757] focus:ring-2 focus:ring-red-100 transition-all font-medium text-lg"
+                                    className="w-full h-14 pl-6 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 placeholder-gray-400 focus:outline-none focus:border-[#E55D2C] focus:ring-2 focus:ring-red-100 transition-all font-medium text-lg"
                                 />
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full h-16 bg-[#FF5757] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-lg shadow-lg shadow-red-200"
+                                className="w-full h-16 bg-[#E55D2C] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 text-lg shadow-lg shadow-red-200"
                             >
                                 Track Shipment
                                 <ArrowRight size={24} />

@@ -26,13 +26,12 @@ const slides = [
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLocation, setSelectedLocation] = useState("Bali, Indonesia");
+  const [selectedLocation, setSelectedLocation] = useState("Nigeria");
 
   const locations = [
-    "Bali, Indonesia",
-    "Singapore",
-    "Rotterdam",
-    "Los Angeles"
+    "Nigeria",
+    "UK",
+    "USA"
   ];
 
   useEffect(() => {
@@ -97,13 +96,13 @@ export default function Hero() {
             </h2>
             <form className="space-y-4">
               <div className="relative group">
-                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#FF5757] transition-colors" size={20} />
+                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#E55D2C] transition-colors" size={20} />
 
                 <div className="relative">
                   <button
                     type="button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                    className="w-full h-12 pl-12 pr-4 bg-white/5 border border-white/10 rounded-xl text-white text-left flex items-center justify-between focus:outline-none focus:border-[#FF5757] focus:bg-white/10 transition-all"
+                    className="w-full h-12 pl-12 pr-4 bg-white/5 border border-white/10 rounded-xl text-white text-left flex items-center justify-between focus:outline-none focus:border-[#E55D2C] focus:bg-white/10 transition-all"
                   >
                     <span className="truncate">{selectedLocation}</span>
                     <ChevronDown size={16} className={`text-gray-400 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -143,7 +142,7 @@ export default function Hero() {
               </div>
 
               <div className="relative group">
-                <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#FF5757] transition-colors" size={20} />
+                <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#E55D2C] transition-colors" size={20} />
                 <input
                   type="text"
                   placeholder="Thursday, 12 August 2024"
@@ -151,13 +150,13 @@ export default function Hero() {
                   onBlur={(e) => {
                     if (!e.target.value) e.target.type = "text";
                   }}
-                  className="w-full h-12 pl-12 pr-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#FF5757] focus:bg-white/10 transition-all"
+                  className="w-full h-12 pl-12 pr-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-[#E55D2C] focus:bg-white/10 transition-all"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full h-12 bg-[#FF5757] hover:bg-[#ff4444] text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 group"
+                className="w-full h-12 bg-[#E55D2C] hover:bg-[#ff4444] text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 group"
               >
                 Find Expeditions
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -173,7 +172,7 @@ export default function Hero() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#FF5757] w-8" : "bg-white/50 hover:bg-white"
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#E55D2C] w-8" : "bg-white/50 hover:bg-white"
               }`}
           />
         ))}

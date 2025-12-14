@@ -48,7 +48,7 @@ export default function Services() {
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-white border border-gray-200 text-[#FF5757] text-sm font-bold mb-6 shadow-sm uppercase tracking-wider">
+                    <span className="inline-block px-4 py-1.5 rounded-full bg-white border border-gray-200 text-[#E55D2C] text-sm font-bold mb-6 shadow-sm uppercase tracking-wider">
                         Our Services
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold text-[#0B1221] mb-6 tracking-tight">
@@ -70,12 +70,12 @@ export default function Services() {
                             whileHover={{ y: -10 }}
                             className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-gray-100 relative overflow-hidden"
                         >
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-bl-full -mr-4 -mt-4 transition-colors group-hover:bg-[#FF5757]/10"></div>
+                            <div className="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-bl-full -mr-4 -mt-4 transition-colors group-hover:bg-[#E55D2C]/10"></div>
 
-                            <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#FF5757] transition-colors duration-300 relative z-10">
-                                <service.icon className="text-[#FF5757] group-hover:text-white transition-colors duration-300" size={28} />
+                            <div className="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#E55D2C] transition-colors duration-300 relative z-10">
+                                <service.icon className="text-[#E55D2C] group-hover:text-white transition-colors duration-300" size={28} />
                             </div>
-                            <h3 className="text-xl font-bold text-[#0B1221] mb-4 group-hover:text-[#FF5757] transition-colors relative z-10">
+                            <h3 className="text-xl font-bold text-[#0B1221] mb-4 group-hover:text-[#E55D2C] transition-colors relative z-10">
                                 {service.title}
                             </h3>
                             <p className="text-gray-600 leading-relaxed relative z-10">

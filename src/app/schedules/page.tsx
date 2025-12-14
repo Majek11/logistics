@@ -19,18 +19,18 @@ export default function SchedulesPage() {
                         <form className="grid grid-cols-1 md:grid-cols-4 gap-6 items-end">
                             <div className="md:col-span-1">
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">Origin Port</label>
-                                <input type="text" placeholder="e.g. Shanghai" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors" />
+                                <input type="text" placeholder="e.g. Shanghai" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
                             </div>
                             <div className="md:col-span-1">
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">Destination Port</label>
-                                <input type="text" placeholder="e.g. Rotterdam" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors" />
+                                <input type="text" placeholder="e.g. Rotterdam" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
                             </div>
                             <div className="md:col-span-1">
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">Departure Date</label>
-                                <input type="date" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#FF5757] transition-colors" />
+                                <input type="date" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
                             </div>
                             <div className="md:col-span-1">
-                                <button type="submit" className="w-full h-12 bg-[#FF5757] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
+                                <button type="submit" className="w-full h-12 bg-[#E55D2C] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
                                     Search
                                     <Search size={20} />
                                 </button>

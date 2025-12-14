@@ -117,7 +117,7 @@ export default function CaseStudies() {
                                 <span className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-2 block">
                                     Case Studies
                                 </span>
-                                <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#FF5757] transition-colors line-clamp-2">
+                                <h3 className="text-xl font-bold text-[#0B1221] mb-3 group-hover:text-[#E55D2C] transition-colors line-clamp-2">
                                     {study.title}
                                 </h3>
                                 <p className="text-sm text-gray-500">

@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function CallToAction() {
     return (
-        <section className="py-24 bg-[#FF5757] relative overflow-hidden">
+        <section className="py-24 bg-[#E55D2C] relative overflow-hidden">
             <div className="absolute inset-0 opacity-10 bg-[url('/images/hero-bg.png')] bg-cover bg-center mix-blend-multiply" />
 
             <div className="container mx-auto px-6 relative z-10 text-center">
@@ -18,7 +18,7 @@ export default function CallToAction() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Link
                         href="/contact"
-                        className="px-8 py-4 bg-white text-[#FF5757] font-bold rounded-xl hover:bg-gray-100 transition-all shadow-lg flex items-center justify-center gap-2"
+                        className="px-8 py-4 bg-white text-[#E55D2C] font-bold rounded-xl hover:bg-gray-100 transition-all shadow-lg flex items-center justify-center gap-2"
                     >
                         Contact Us
                         <ArrowRight size={20} />

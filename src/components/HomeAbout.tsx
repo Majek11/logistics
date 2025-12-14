@@ -29,7 +29,7 @@ export default function HomeAbout() {
                         </div>
 
                         {/* Experience Badge */}
-                        <div className="absolute -bottom-6 -right-6 bg-[#FF5757] text-white p-8 rounded-3xl shadow-xl hidden md:block">
+                        <div className="absolute -bottom-6 -right-6 bg-[#E55D2C] text-white p-8 rounded-3xl shadow-xl hidden md:block">
                             <p className="text-4xl font-bold mb-1">25+</p>
                             <p className="text-sm font-medium opacity-90">Years of<br />Experience</p>
                         </div>
@@ -46,11 +46,11 @@ export default function HomeAbout() {
                         transition={{ duration: 0.8 }}
                         className="w-full lg:w-1/2"
                     >
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-red-50 border border-red-100 text-[#FF5757] text-sm font-bold mb-6 uppercase tracking-wider">
+                        <span className="inline-block px-4 py-1.5 rounded-full bg-red-50 border border-red-100 text-[#E55D2C] text-sm font-bold mb-6 uppercase tracking-wider">
                             About Us
                         </span>
                         <h2 className="text-4xl md:text-5xl font-bold text-[#0B1221] mb-8 leading-tight">
-                            We provide the best <span className="text-[#FF5757]">logistics solutions</span> for your business
+                            We provide the best <span className="text-[#E55D2C]">logistics solutions</span> for your business
                         </h2>
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                             Kenny Logistics Services is a global leader in supply chain management and logistics. We combine industry expertise with cutting-edge technology to deliver seamless, efficient, and sustainable solutions for businesses of all sizes.
@@ -64,7 +64,7 @@ export default function HomeAbout() {
                                 "24/7 Customer Support"
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3">
-                                    <CheckCircle2 className="text-[#FF5757]" size={20} />
+                                    <CheckCircle2 className="text-[#E55D2C]" size={20} />
                                     <span className="text-[#0B1221] font-medium">{item}</span>
                                 </div>
                             ))}

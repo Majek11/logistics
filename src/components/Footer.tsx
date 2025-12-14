@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div>
                         <Link href="/" className="flex items-center gap-2 mb-6">
-                            <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-12 w-auto" style={{ filter: 'brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(4498%) hue-rotate(347deg) brightness(106%) contrast(107%)' }} />
+                            <img src="/images/logo.png" alt="Kenny Logistics Services" className="h-12 w-auto" />
                         </Link>
                         <p className="text-gray-400 leading-relaxed mb-8">
                             Kenny Logistics Services - Leading the way in global supply chain management and logistics solutions. We connect your business to the world.
@@ -21,7 +21,7 @@ export default function Footer() {
                                 <a
                                     key={i}
                                     href="#"
-                                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#FF5757] hover:text-white transition-all"
+                                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-[#E55D2C] hover:text-white transition-all"
                                 >
                                     <Icon size={18} />
                                 </a>
@@ -35,7 +35,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {["Supply Chain", "Air Freight", "Warehousing", "Cargo", "Customs Brokerage"].map((item) => (
                                 <li key={item}>
-                                    <Link href="#" className="text-gray-400 hover:text-[#FF5757] transition-colors">
+                                    <Link href="#" className="text-gray-400 hover:text-[#E55D2C] transition-colors">
                                         {item}
                                     </Link>
                                 </li>
@@ -49,7 +49,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {["About Us", "Case Studies", "Our Team", "Careers", "News & Insights"].map((item) => (
                                 <li key={item}>
-                                    <Link href="#" className="text-gray-400 hover:text-[#FF5757] transition-colors">
+                                    <Link href="#" className="text-gray-400 hover:text-[#E55D2C] transition-colors">
                                         {item}
                                     </Link>
                                 </li>
@@ -64,9 +64,8 @@ export default function Footer() {
                             <li>info@kennylogistics.com</li>
                             <li>07502142839</li>
                             <li>
-                                6 Jaxons Court, Haligate<br />
-                                Wigan (By Stand U, Wigan Bus Station)<br />
-                                WN1 1LR
+                                6 Jaxons Court, Hallgate, Wigan<br />
+                                ( By Stand U, Wigan Bus Station ) WN1 1LR
                             </li>
                         </ul>
                     </div>

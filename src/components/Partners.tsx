@@ -15,7 +15,7 @@ export default function Partners() {
                     {/* Using text placeholders styled as logos since we don't have SVGs handy, 
                 but in a real app these would be SVGs */}
                     {partners.map((partner) => (
-                        <span key={partner} className="text-2xl md:text-3xl font-bold text-gray-800 hover:text-[#FF5757] transition-colors cursor-default">
+                        <span key={partner} className="text-2xl md:text-3xl font-bold text-gray-800 hover:text-[#E55D2C] transition-colors cursor-default">
                             {partner}
                         </span>
                     ))}

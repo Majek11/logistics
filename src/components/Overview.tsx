@@ -50,7 +50,7 @@ export default function Overview() {
                             Supply chains can be complicated. That's why we have designed our Supply Chain Management (SCM) services to help cater to your logistics complexities. We provide the tools and expertise you need to stay ahead.
                         </p>
 
-                        <button className="px-8 py-4 bg-[#FF5757] hover:bg-[#ff4444] text-white font-semibold rounded-xl transition-all flex items-center gap-2 group shadow-lg shadow-red-200">
+                        <button className="px-8 py-4 bg-[#E55D2C] hover:bg-[#ff4444] text-white font-semibold rounded-xl transition-all flex items-center gap-2 group shadow-lg shadow-red-200">
                             Read More
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </button>
