@@ -22,10 +22,9 @@ export default function TrackingPage() {
                                     <div className="relative">
                                         <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
                                         <select className="w-full h-14 pl-12 pr-4 bg-gray-50 border border-gray-200 rounded-xl text-gray-800 focus:outline-none focus:border-[#E55D2C] focus:ring-2 focus:ring-red-100 transition-all appearance-none cursor-pointer font-medium">
-                                            <option>Bali, Indonesia</option>
-                                            <option>Singapore</option>
-                                            <option>Rotterdam</option>
-                                            <option>Los Angeles</option>
+                                            <option>Nigeria</option>
+                                            <option>UK</option>
+                                            <option>USA</option>
                                         </select>
                                     </div>
                                 </div>
