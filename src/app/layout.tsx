@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>{children}</body>
+      <body className={dmSans.className}>
+        <Toaster position="top-right" />
+        {children}
+      </body>
     </html>
   );
 }

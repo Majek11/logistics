@@ -66,22 +66,22 @@ export default function ContactPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
-                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
+                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors text-gray-900" />
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
-                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
+                                        <input type="text" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors text-gray-900" />
                                     </div>
                                 </div>
 
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                                    <input type="email" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors" />
+                                    <input type="email" className="w-full h-12 px-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors text-gray-900" />
                                 </div>
 
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                                    <textarea rows={4} className="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors resize-none"></textarea>
+                                    <textarea rows={4} className="w-full p-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:border-[#E55D2C] transition-colors resize-none text-gray-900"></textarea>
                                 </div>
 
                                 <button type="submit" className="w-full h-14 bg-[#E55D2C] hover:bg-[#ff4444] text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2">
