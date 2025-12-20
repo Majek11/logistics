@@ -3,11 +3,20 @@ import { createServerSupabaseClient } from '@/lib/auth-server';
 import { supabaseAdmin } from '@/lib/supabase';
 import type { DashboardStats } from '@/lib/types';
 
+// Configure runtime for Vercel
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
     try {
         // Check authentication
         const supabase = await createServerSupabaseClient();
-        const { data: { session } } = await supabase.auth.getSession();
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+
+        if (sessionError) {
+            console.error('Session error:', sessionError);
+            return NextResponse.json({ error: 'Authentication error' }, { status: 401 });
+        }
 
         if (!session) {
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -49,7 +58,11 @@ export async function GET() {
             recent_shipments: recentShipments || [],
         };
 
-        return NextResponse.json(stats);
+        return NextResponse.json(stats, {
+            headers: {
+                'Cache-Control': 'no-store, max-age=0',
+            },
+        });
     } catch (error) {
         console.error('Dashboard stats error:', error);
         return NextResponse.json(

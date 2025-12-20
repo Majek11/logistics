@@ -18,11 +18,18 @@ export default function AdminDashboard() {
     const fetchDashboardStats = async () => {
         try {
             const response = await fetch('/api/admin/dashboard');
+
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('Dashboard API error:', response.status, errorText);
+                throw new Error(`Failed to fetch dashboard data: ${response.status}`);
+            }
+
             const data = await response.json();
             setStats(data);
         } catch (error) {
             console.error('Error fetching dashboard stats:', error);
-            toast.error('Failed to load dashboard data');
+            toast.error('Failed to load dashboard data. Please check your connection and try again.');
         } finally {
             setLoading(false);
         }
